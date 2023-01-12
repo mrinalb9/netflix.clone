@@ -53,10 +53,10 @@ header {
     /* right: 20%; */
     /* background-color: rgba(34, 34, 34, 0.9); */
     background-color: rgb(34, 34, 34, 0.9);
-    background-image: url("/img/drop-down.png");
-    background-size: contain;
+    /* background-image: url("/img/drop-down.png");
+    background-size: 20px;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right; */
     color: #fff;
     border-radius: 1px;
     border: 1px #aaa solid;
@@ -64,10 +64,21 @@ header {
     appearance: none;
 }
 
+.showcase-top .lang ::before {
+    background-image: url("../img/lang-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    /* Unable to add the language icon */
+}
+
 .showcase-top .lang::after {
-    padding: 0.5rem 1.8em;
-    font: #fff;
-    
+    This code:
+    /* background-image: url("/img/drop-down.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right; */
+    is working in the ".showcase-top .lang" class seperately but not in this pesudo-class
 }
 
 .showcase-top a {
