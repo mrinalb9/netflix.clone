@@ -11,6 +11,7 @@
 
 body {
     color:#fff;
+    background-color: #000;
 }
 
 header {
@@ -19,39 +20,67 @@ header {
 
 .showcase {
     background: url("/img/background.jpg") no-repeat;
+    background-size: cover;
     height: 100vh;
+    border-bottom: #222 solid 8px;
+    box-shadow: inset 120px 120px 100px 100px rgba(0, 0, 0, 0.7), inset -120px -120px 100px 100px rgba(0, 0, 0, 0.5);
 }
 
-.showcase-top .container select,a {
+.showcase-top .container {
     display: flex;
-    position: relative;    
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    margin: 0 0;
 }
 
 .showcase-top img{
-    padding: 2rem;
-    width: 9.7rem;
-    height: 2.9rem;
+    padding: 2rem 3rem;
+    width: 10rem;
+    height: 2.8rem;
     transform: translate(0,0);
 }
 
 .showcase-top .lang {
-    padding: 0.5rem 1.8em;
+    margin: 2rem;
+    margin-left: auto;
+    padding: 0.5rem 0.5rem;
     font: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    /* right: 20%; */
+    /* background-color: rgba(34, 34, 34, 0.9); */
+    background: rgba(34, 34, 34, 0.9) url("/img/drop-down.png") no-repeat left;
+    color: #fff;
+    border-radius: 1px;
+    border: 1px #aaa solid;
+    width: 6.4rem;
+    appearance: none;
 }
 
 .showcase-top .lang::after {
     padding: 0.5rem 1.8em;
     font: #fff;
+    
 }
 
 .showcase-top a {
     /* border-radius: 2px; */
     text-decoration: none;
-    padding: 0.8rem 2rem;
+    /* padding: 0.5rem 1.3em; */
+    position: relative;
+    /* width: 12.4rem; */
+    /* right: 10%; */
+    /* order: 2; */
+    /* flex-shrink: 0; */
+    margin-top: 2rem;
+    margin-right: 3rem;
 }
 
 .showcase-content {
-    padding: 9.5rem 30rem;
+    padding: 7% 10%;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -61,12 +90,42 @@ header {
     font-size: 3.7rem;
 }
 
+/* Tabs */
+
+.tab-1 {
+    border-top:#aaa;
+}
+
+.tab-1-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+}
+
+.tab-1-content .container {
+    justify-content: center;
+    align-items: center;
+    padding: 25% 25%;
+}
+
 /* Buttons */
 .btn-sm {
     background-color: #E50914;
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 4px;
+}
+
+h1 {
+    font-size: 3.7rem;
+}
+
+h2 {
+    
+}
+
+.text-md {
+    
 }
 
 
