@@ -52,7 +52,11 @@ header {
     position: relative;
     /* right: 20%; */
     /* background-color: rgba(34, 34, 34, 0.9); */
-    background: rgba(34, 34, 34, 0.9) url("/img/drop-down.png") no-repeat left;
+    background-color: rgb(34, 34, 34, 0.9);
+    background-image: url("/img/drop-down.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
     color: #fff;
     border-radius: 1px;
     border: 1px #aaa solid;
