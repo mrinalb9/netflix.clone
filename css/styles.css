@@ -73,12 +73,12 @@ header {
 }
 
 .showcase-top .lang::after {
-    This code:
-    /* background-image: url("/img/drop-down.png");
+    /* This code: */
+    background-image: url("/img/drop-down.png");
     background-size: 20px;
     background-repeat: no-repeat;
-    background-position: right; */
-    is working in the ".showcase-top .lang" class seperately but not in this pesudo-class
+    background-position: right;
+    /* is working in the ".showcase-top .lang" class seperately but not in this pesudo-class */
 }
 
 .showcase-top a {
