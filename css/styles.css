@@ -36,14 +36,14 @@ header {
     margin: 0 0;
 }
 
-.showcase-top img{
+.showcase-top .container img{
     padding: 2rem 3rem;
     width: 10rem;
     height: 2.8rem;
     transform: translate(0,0);
 }
 
-.showcase-top .lang {
+.showcase-top .container .lang {
     margin: 2rem;
     margin-left: auto;
     padding: 0.5rem 0.5rem;
@@ -64,7 +64,9 @@ header {
     appearance: none;
 }
 
-.showcase-top .lang ::before {
+.showcase-top .container .lang::before {
+    content: "\e896";
+    position: absolute;
     background-image: url("../img/lang-icon.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -73,12 +75,19 @@ header {
 }
 
 .showcase-top .lang::after {
+    content: "";
+    position: absolute;
     /* This code: */
-    background-image: url("/img/drop-down.png");
+    /* background-image: url("/img/drop-down.png");
     background-size: 20px;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right; */
     /* is working in the ".showcase-top .lang" class seperately but not in this pesudo-class */
+}
+
+i {
+    font-weight: 900;
+    content: "\f0ac";
 }
 
 .showcase-top a {
