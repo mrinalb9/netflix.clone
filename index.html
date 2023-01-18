@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/047a3bb86a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="showcase">
         <div class="showcase-top">
             <div class="container">
                 <img src="img/logo.png" alt="Netflix logo">
-                <select class="lang" name="lang" id="lang">
-                    <i class="fa-sharp fa-solid fa-globe"></i>
-                    <option value="English">&#xf015;English</option>
-                    <option value="Hindi">Hindi</option>
-                </select>
+                <div class="dropdown">
+                    <i class="fa fa-solid fa-globe"></i>
+                    <select class="lang" name="lang" id="lang">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                    </select>
+                    <img src="./img/drop-down.png" alt="">
+                </div>
                 <a href="#" class="btn btn-sm">Sign In</a>
             </div>
         </div>
@@ -39,6 +43,5 @@
             <img src="img/tv.png" alt="">
         </div>
     </section>
-    <script src="https://kit.fontawesome.com/047a3bb86a.js" crossorigin="anonymous"></script>
 </body>
 </html>

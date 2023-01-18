@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
 :root {
     --primary-color: #E50914;
 }
@@ -43,20 +45,14 @@ header {
     transform: translate(0,0);
 }
 
-.showcase-top .container .lang {
+.showcase-top .container .dropdown {
     margin: 2rem;
     margin-left: auto;
     padding: 0.5rem 0.5rem;
     font: #fff;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    /* right: 20%; */
-    /* background-color: rgba(34, 34, 34, 0.9); */
     background-color: rgb(34, 34, 34, 0.9);
-    /* background-image: url("/img/drop-down.png");
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: right; */
     color: #fff;
     border-radius: 1px;
     border: 1px #aaa solid;
@@ -64,8 +60,23 @@ header {
     appearance: none;
 }
 
+.showcase-top select.lang {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    appearance: none;
+}
+
+.showcase-top .dropdown > img {
+    width: 1.5rem;
+    height: 1.8rem;
+    position: absolute;
+    bottom: -2rem;
+    left: 2rem
+}
+
 .showcase-top .container .lang::before {
-    content: "\e896";
+    content: "";
     position: absolute;
     background-image: url("../img/lang-icon.png");
     background-repeat: no-repeat;
