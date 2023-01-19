@@ -25,7 +25,7 @@ header {
     background-size: cover;
     height: 100vh;
     border-bottom: #222 solid 8px;
-    box-shadow: inset 120px 120px 100px 100px rgba(0, 0, 0, 0.7), inset -120px -120px 100px 100px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 120px 120px 100px 100px rgb(0, 0, 0, 0.7), inset -120px -120px 100px 100px rgb(0, 0, 0, 0.5);
 }
 
 .showcase-top .container {
@@ -56,8 +56,14 @@ header {
     color: #fff;
     border-radius: 1px;
     border: 1px #aaa solid;
-    width: 6.4rem;
+    width: 5rem;
     appearance: none;
+}
+
+i {
+    position: absolute;
+    left: 5.2px;
+    top: 17.5px;
 }
 
 .showcase-top select.lang {
@@ -65,14 +71,18 @@ header {
     border: none;
     color: inherit;
     appearance: none;
+    width: 80%;
+    /* width: 80px; */
+    height: 20px;
+    position: relative;
+    margin-left: 16px;
+    z-index: 2;
+    text-align: left;
+    float:initial;
 }
 
-.showcase-top .dropdown > img {
-    width: 1.5rem;
-    height: 1.8rem;
-    position: absolute;
-    bottom: -2rem;
-    left: 2rem
+.showcase-top select.lang option {
+    background-color: rgb(34, 34, 34, 0.9);
 }
 
 .showcase-top .container .lang::before {
@@ -82,36 +92,30 @@ header {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
-    /* Unable to add the language icon */
 }
 
 .showcase-top .lang::after {
     content: "";
     position: absolute;
-    /* This code: */
-    /* background-image: url("/img/drop-down.png");
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: right; */
-    /* is working in the ".showcase-top .lang" class seperately but not in this pesudo-class */
 }
 
-i {
-    font-weight: 900;
-    content: "\f0ac";
+.showcase-top .dropdown > img {
+    width: 1.5rem;
+    height: 1.8rem;
+    position: absolute;
+    bottom: -1.9rem;
+    left: 1.2rem;
 }
 
-.showcase-top a {
+.showcase-top button {
     /* border-radius: 2px; */
     text-decoration: none;
-    /* padding: 0.5rem 1.3em; */
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    /* width: 12.4rem; */
-    /* right: 10%; */
-    /* order: 2; */
-    /* flex-shrink: 0; */
     margin-top: 2rem;
     margin-right: 3rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
 }
 
 .showcase-content {
