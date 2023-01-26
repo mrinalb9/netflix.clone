@@ -87,20 +87,6 @@ i {
     background-color: rgb(34, 34, 34, 0.9);
 }
 
-.showcase-top .container .lang::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/lang-icon.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-}
-
-.showcase-top .lang::after {
-    content: "";
-    position: absolute;
-}
-
 .showcase-top .dropdown > img {
     width: 1.5rem;
     height: 1.8rem;
@@ -220,18 +206,13 @@ h1 {
     font-size: 3.7rem;
 }
 
-h2 {
-    
-}
-
-.text-md {
-    
-}
-
-
 /* Media Queries */
 @media only screen and (min-width: 600px) and (max-width: 900px) {
-    
+   
+    body {
+        
+    }
+
     .showcase-top .container {
         padding-top: 3%;
     }
